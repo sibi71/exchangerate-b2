@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --primary-color : blue;
+    --text-color : white;
+    --border-line:gray;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 90vh;
+}
+img{
+    max-width: 150px;
+}
+.container{
+    border: 2px solid var(--primary-color);
+    padding: 20px;
+    border-radius: 30px;
+    background-color: white;
+}
+h1{
+    font-size: 40px;
+    color: var(--primary-color);
+    margin-bottom: 30px;
+}
+.swap{
+    color: var(--text-color);
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    padding: 10px 30px;
+    cursor: pointer;
+}
+.currency{
+    padding: 40px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.currency select{
+    padding: 10px;
+    padding-right: 20px;
+    font-size: 16px;
+    border: 1px solid var(--primary-color);
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.currency input {
+    font-size: 30px;
+    border: none;
+    background-color: transparent;
+    text-align: right;
+    outline: none;
+}
+.swap-rate-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.rate{
+    font-size: 18px;
+    font-weight: 900;
+    color: var(--primary-color);
+}
